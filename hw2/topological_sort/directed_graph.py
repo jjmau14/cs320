@@ -1,9 +1,3 @@
-# Not necessary to do this assignment,
-# but it is recommended that you create a class
-# to represent directed graphs.
-# See bipartite_recognition/undirected_graph.py for a rough idea
-
-
 import copy
 from collections import defaultdict
 
@@ -14,7 +8,7 @@ def normalize_attributes(attributes):
         raise ValueError('attributes must be a dict or a set')
     return attributes
 
-class Digraph:
+class graph:
     def __init__(self):
         self.nodes = {}
         self.edges = defaultdict(dict)
