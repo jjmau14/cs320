@@ -49,6 +49,7 @@ while menu:
         total_dogs = num_people * dogs_per_people
         if total_dogs % 10 == 0:
             print("Buy {} bags of dogs".format(total_dogs//10))
+            print("No dogs will be leftover")
         else:
             x_dogs = total_dogs//10
             print("Buy {} bags of dogs".format((x_dogs) + 1))
@@ -56,6 +57,7 @@ while menu:
         
         if total_dogs % 8 == 0:
             print("Buy {} bags of buns".format(total_dogs//8))
+            print("No buns will be leftover")
         else:
             x_buns = total_dogs//8
             print("Buy {} bags of buns".format((x_buns) + 1))
