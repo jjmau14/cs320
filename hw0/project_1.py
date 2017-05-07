@@ -46,7 +46,7 @@ while menu:
         print ("hi")
        
     elif menu=="4":
-        num = input("Enter a number between 1 and 36: ")
+        num = int(input("Enter a number between 1 and 36: "))
         if num > 18:
             print("Blue")
         elif num > 10:
