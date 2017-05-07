@@ -43,12 +43,18 @@ while menu:
             print ("A friend asks only for your time not your money.")
 
     elif menu=="3":
-        print ("hi")
+        num_people = int(input("Enter number that people will attend: "))
+        dogs_per_people = int(input("Enter number of dogs each person wants: "))
+        
+        total_dogs = num_people + dogs_per_people
        
     elif menu=="4":
         num = int(input("Enter a number between 1 and 36: "))
         if num > 18:
-            print("Blue")
+            if num % 2 == 0:
+                print("black")
+            else:
+                print("Blue")
         elif num > 10:
             print("Red")
         else:
