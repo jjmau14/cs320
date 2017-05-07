@@ -51,13 +51,15 @@ while menu:
             print("Buy {} bags of dogs".format(total_dogs//10))
         else:
             x_dogs = total_dogs//10
-            print("Buy {} bads of dogs".format((x_dogs) + 1))
+            print("Buy {} bags of dogs".format((x_dogs) + 1))
+            print("{} dogs will be leftover".format(10-(-x_dogs*10)-total_dogs))
         
         if total_dogs % 8 == 0:
             print("Buy {} bags of buns".format(total_dogs//8))
         else:
             x_buns = total_dogs//8
-            print("Buy {} bads of buns".format((x_buns) + 1))
+            print("Buy {} bags of buns".format((x_buns) + 1))
+            print("{} buns will be leftover".format(8-(-x_buns*8)-total_dogs))
             
     elif menu=="4":
         num = int(input("Enter a number between 1 and 36: "))
