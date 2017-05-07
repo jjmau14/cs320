@@ -46,8 +46,17 @@ while menu:
         num_people = int(input("Enter number that people will attend: "))
         dogs_per_people = int(input("Enter number of dogs each person wants: "))
         
-        total_dogs = num_people + dogs_per_people
-       
+        total_dogs = num_people * dogs_per_people
+        if total_dogs % 10 == 0:
+            print("Buy {} bags of dogs".format(total_dogs/10))
+        else:
+            print("Buy {} bads of dogs".format((total_dogs/10) + 1))
+        
+        if total_dogs % 8 == 0:
+            print("Buy {} bags of buns".format(total_dogs/8))
+        else:
+            print("Buy {} bads of buns".format((total_dogs/8) + 1))
+            
     elif menu=="4":
         num = int(input("Enter a number between 1 and 36: "))
         if num > 18:
