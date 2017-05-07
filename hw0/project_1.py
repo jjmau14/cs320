@@ -48,14 +48,16 @@ while menu:
         
         total_dogs = num_people * dogs_per_people
         if total_dogs % 10 == 0:
-            print("Buy {} bags of dogs".format(total_dogs/10))
+            print("Buy {} bags of dogs".format(total_dogs//10))
         else:
-            print("Buy {} bads of dogs".format((total_dogs/10) + 1))
+            x_dogs = total_dogs//10
+            print("Buy {} bads of dogs".format((x_dogs) + 1))
         
         if total_dogs % 8 == 0:
-            print("Buy {} bags of buns".format(total_dogs/8))
+            print("Buy {} bags of buns".format(total_dogs//8))
         else:
-            print("Buy {} bads of buns".format((total_dogs/8) + 1))
+            x_buns = total_dogs//8
+            print("Buy {} bads of buns".format((x_buns) + 1))
             
     elif menu=="4":
         num = int(input("Enter a number between 1 and 36: "))
